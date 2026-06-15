@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Children's Stories - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html" class="active">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Storytelling Category</span>
+                <h2>ChatGPT Prompts for Children's Stories</h2>
+                <p class="article-lead">Spark imagination and wonder in young minds. These expert-engineered prompts help you generate whimsical fairy tales, magical adventures, and educational stories that keep kids engaged from start to finish.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Whimsical Secret Animal Adventure</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Creates a magical, fast-paced adventure story starring an everyday animal with a secret, fun superpower or double life.</p>
+                    <p><strong>Best use case:</strong> Illustrated picture books, early reader chapter books, or bedtime reading.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="child1">Act as an expert children's book author. Write a whimsical story for kids aged 5-8 about a small, ordinary animal (like a backyard puppy or a little bird) who secretly runs a magical rescue team for lost toys when humans are asleep. The tone should be playful, bright, and full of gentle humor. Focus on teamwork, problem-solving without violence, and give the story a warm, happy ending.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('child1')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Barnaby was a very sleepy golden retriever during the day, but the moment the grandfather clock struck midnight, he adjusted his tiny glowing collar..."
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Magical World via Everyday Objects</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Generates a fantasy tale where a normal household object serves as a secret portal to a safe, colorful magical kingdom.</p>
+                    <p><strong>Best use case:</strong> Fantasy podcast scripts for kids, creative writing ideas, or children's book series starters.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="child2">Write a magical fantasy story for children aged 7-10. The plot follows a curious child who discovers that looking through an old, dusty pair of green sunglasses in their attic reveals a hidden, floating island populated by friendly paper-airplane creatures. Create a fun, imaginative journey where the child helps the creatures solve a mystery, emphasizing creativity and curiosity.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('child2')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Leo slipped the green lenses over his eyes, and suddenly the boring, dusty attic walls melted away into a sky of brilliant violet clouds..."
+                    </blockquote>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Clipboard Functionality Script -->
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
