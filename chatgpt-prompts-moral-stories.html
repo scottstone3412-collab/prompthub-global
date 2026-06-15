@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Moral Stories - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="chatgpt-prompts-african-folktales.html" class="active">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Storytelling Category</span>
+                <h2>ChatGPT Prompts for Moral Stories</h2>
+                <p class="article-lead">Create impactful stories that teach valuable life lessons. These highly targeted prompts help authors, content creators, and educators generate narratives that inspire character building, integrity, and wisdom across all age groups.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Lesson of Kind Sharing</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Generates a heartwarming fable focused on how sharing brings greater joy than hoarding resources.</p>
+                    <p><strong>Best use case:</strong> Classroom reading materials, kids' moral books, or animated short scripts.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="moral1">Act as an award-winning children's author. Write a short, engaging story centered on the moral lesson that "sharing brings more happiness than keeping everything for oneself." The characters should be friendly forest animals. Keep the vocabulary simple but expressive, create a clear conflict when one character refuses to share, and show a beautiful resolution where everyone wins through kindness.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('moral1')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Bramble the squirrel had the largest pile of sweet acorns in the entire valley, yet his hollow tree felt incredibly cold and lonely..."
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Consequence of Arrogance</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Constructs a dynamic story highlighting the pitfalls of pride and the timeless strength of humility.</p>
+                    <p><strong>Best use case:</strong> Teen or young adult educational content, scriptwriting for social media mini-series.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="moral2">Write a fictional story targeting young adults that teaches a profound moral lesson about humility versus arrogance. The setting should be a modern high school or sports team environment. Follow a exceptionally talented main character who looks down on others, experiences a dramatic setback due to their pride, and ultimately learns to appreciate teamwork and humility from an unexpected mentor.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('moral2')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Jordan always wore his championship medals like armor, forgetting that armor gets heavy when you refuse to let anyone else help you carry it..."
+                    </blockquote>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Clipboard Functionality Script -->
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
