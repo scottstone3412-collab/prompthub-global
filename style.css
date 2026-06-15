@@ -1,76 +1,214 @@
-body {
-    font-family: Arial, sans-serif;
+/* ==========================================
+   PromptHub Global - Animated Core Stylesheet
+   ========================================== */
+
+/* Base Reset & Variables */
+* {
     margin: 0;
     padding: 0;
-    background: #0f172a;
-    color: white;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
-    background: #1e293b;
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-nav {
+/* Header & Navigation */
+.main-header {
+    background-color: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    padding: 20px 5%;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #111827;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-nav a {
-    color: white;
+@media (min-width: 768px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.logo-area h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo-area p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.nav-links {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        margin-top: 0;
+    }
+}
+
+.nav-links a {
+    color: #94a3b8;
     text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.hero {
+.nav-links a:hover, .nav-links a.active {
+    color: #38bdf8;
+}
+
+/* Hero Section with Moving Ambient Glow */
+.hero-section {
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px;
+    background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
+    position: relative;
 }
 
-.categories {
+.hero-section h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+    font-weight: 800;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Text Gradient Effect */
+.text-gradient {
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Categories Layout */
+.categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.categories-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 25px;
 }
 
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
+@media (min-width: 550px) {
+    .categories-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-footer {
+@media (min-width: 950px) {
+    .categories-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Animated Category Cards */
+.category-card {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 30px 20px;
     text-align: center;
-    padding: 20px;
-    background: #111827;
-    margin-top: 20px;
-}
-/* Container and text elements */
-.content-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    color: #e0e6ed;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.category-tag {
-    background-color: #ff9f43;
-    color: #1a202c;
-    padding: 4px 10px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border-radius: 4px;
-    text-transform: uppercase;
+/* Neon Glow Effect on Card Hover */
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2);
 }
 
-/* Styled text box for the prompts */
+/* Special Neon Glow specifically for the new Writing Card */
+.category-card.writing-glow {
+    border-color: rgba(129, 140, 248, 0.4);
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.05);
+}
+
+.category-card.writing-glow:hover {
+    border-color: #818cf8;
+    box-shadow: 0 10px 30px -5px rgba(129, 140, 248, 0.3);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.category-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Interactive Buttons */
+.card-link-btn {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 1px solid transparent;
+}
+
+.category-card:hover .card-link-btn {
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    transform: scale(1.02);
+}
+
+/* Prompt Page Specific Elements */
+.prompt-article {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.prompt-section {
+    margin: 25px 0;
+}
+
 .prompt-box-container {
-    background-color: #1a202c;
-    border: 1px solid #2d3748;
+    background-color: #0b0f19;
+    border: 1px solid #1e293b;
     border-radius: 8px;
     padding: 20px;
     position: relative;
@@ -80,43 +218,80 @@ footer {
 .prompt-box-container pre {
     white-space: pre-wrap;
     word-wrap: break-word;
-    font-family: inherit;
-    margin-right: 80px; /* Room for button */
-    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e2e8f0;
 }
 
-/* Sleek copy button styling */
 .copy-btn {
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: #3182ce;
-    color: white;
+    background-color: #38bdf8;
+    color: #0b0f19;
     border: none;
-    padding: 8px 12px;
+    padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
-.copy-btn:hover {
-    background-color: #2b6cb0;
-}
-
-/* Blockquote styling for outputs */
 .example-output blockquote {
-    border-left: 4px solid #4a5568;
-    margin: 10px 0 0 0;
+    border-left: 3px solid #818cf8;
     padding-left: 15px;
+    color: #94a3b8;
     font-style: italic;
-    color: #a0aec0;
+    background-color: rgba(129, 140, 248, 0.03);
+    padding: 10px;
+    border-radius: 0 6px 6px 0;
 }
 
-.section-divider {
-    border: 0;
-    height: 1px;
-    background: #2d3748;
-    margin: 40px 0;
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-pop {
+    animation: fadeInUp 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+}
+
+/* Grid Cards Entry Delays */
+.card-delay-1 { animation: fadeInUp 0.4s ease forwards; }
+.card-delay-2 { animation: fadeInUp 0.6s ease forwards; }
+.card-delay-3 { animation: fadeInUp 0.8s ease forwards; }
+.card-delay-4 { animation: fadeInUp 1.0s ease forwards; }
+
+/* Footer Styling */
+.main-footer {
+    background-color: #0f172a;
+    border-top: 1px solid #1e293b;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #64748b;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
 }
