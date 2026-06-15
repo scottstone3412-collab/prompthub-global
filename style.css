@@ -49,3 +49,74 @@ footer {
     background: #111827;
     margin-top: 20px;
 }
+/* Container and text elements */
+.content-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #e0e6ed;
+}
+
+.category-tag {
+    background-color: #ff9f43;
+    color: #1a202c;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+/* Styled text box for the prompts */
+.prompt-box-container {
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    margin: 15px 0;
+}
+
+.prompt-box-container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: inherit;
+    margin-right: 80px; /* Room for button */
+    line-height: 1.6;
+}
+
+/* Sleek copy button styling */
+.copy-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+    background-color: #2b6cb0;
+}
+
+/* Blockquote styling for outputs */
+.example-output blockquote {
+    border-left: 4px solid #4a5568;
+    margin: 10px 0 0 0;
+    padding-left: 15px;
+    font-style: italic;
+    color: #a0aec0;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #2d3748;
+    margin: 40px 0;
+}
