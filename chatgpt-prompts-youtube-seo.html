@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for YouTube SEO & Tags - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html" class="active">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">YouTube Category</span>
+                <h2>ChatGPT Prompts for YouTube SEO & Tags</h2>
+                <p class="article-lead">Rank on page one of search results. Use these optimized prompts to generate algorithm-friendly descriptions, strategic keyword tags, and optimized video timelines.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <section class="prompt-section">
+                <h3>Prompt 1: The Smart Description & Timestamps Builder</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Writes a keyword-rich video description that helps YouTube understand your content while organizing your video into clean, clickable chapters.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="seo1">Act as a YouTube SEO expert. I am uploading a video about [Insert Topic]. Write a 3-paragraph video description optimized for search algorithms. The first paragraph must contain primary keywords naturally. Also, include placeholder sections for 5 chronological timestamps/chapters, a call-to-action to subscribe, and links to social media.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('seo1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="prompt-section">
+                <h3>Prompt 2: The Viral Tag & Keyword Generator</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Extracts high-volume, low-competition search terms to paste into your YouTube video tags box.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="seo2">Generate a list of 20 highly relevant, search-optimized tags for a YouTube video titled "[Insert Video Title]". Categorize them into broad keywords, specific long-tail keywords, and common misspellings or alternative phrases that users might type into the search bar.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('seo2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt copied successfully!');
+            });
+        }
+    </script>
+</body>
+</html>
+
