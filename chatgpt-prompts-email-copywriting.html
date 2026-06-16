@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Email Copywriting - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html" class="active">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Business Category</span>
+                <h2>ChatGPT Prompts for Email Copywriting</h2>
+                <p class="article-lead">Write emails that get opened, read, and clicked. These expert copy frameworks help you craft compelling subject lines, high-converting launch sequences, and engaging weekly newsletters.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The 3-Part High-Converting Sales Sequence</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Generates a structured 3-email sales funnel (The Hook, The Value/Logic, and The Scarcity/Urgency) to pitch a product or service naturally.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="email1">Act as an expert direct-response email copywriter. I am launching a [Insert Product/Service] designed to help [Insert Target Audience] achieve [Insert Main Benefit]. Write a 3-part email sequence. Email 1 should focus on a relatable problem and introduce the solution. Email 2 should handle top objections using logic and social proof. Email 3 should introduce a gentle element of urgency or scarcity to drive action. Provide 3 distinct, high-open-rate subject lines for each email.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('email1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The High-Value Weekly Newsletter Template</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Builds a highly engaging storytelling newsletter that teaches a lesson while subtly pointing readers back to your business or offers.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="email2">Act as a professional newsletter publisher. I need a weekly value-first email newsletter for an audience interested in [Insert Industry/Topic]. Write an engaging email that uses a brief, interesting story or analogy to teach a valuable lesson, breaks down 3 quick bulleted action steps, and ends with a smooth transition to a soft pitch for my business services.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('email2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
