@@ -1,0 +1,109 @@
+here<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for YouTube Titles - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html" class="active">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">YouTube Category</span>
+                <h2>ChatGPT Prompts for YouTube Titles</h2>
+                <p class="article-lead">Fix your Click-Through Rate (CTR) with psychological, attention-grabbing hooks. These tested prompts analyze viral patterns to turn boring video topics into unstoppable click magnets.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Curiosity Gap Title Generator</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Uses psychology to construct open loops that make it nearly impossible for a viewer to scroll past without clicking to find the answer.</p>
+                    <p><strong>Best use case:</strong> Documentaries, storytelling channels, true crime, or deep-dive educational videos.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="title1">Act as a viral YouTube consultant. I will give you my video topic, and you will generate 10 curiosity-gap style titles under 50 characters. These titles must state a shocking or intriguing fact but leave out the core answer so the viewer must watch to find out. Do not use generic clickbait phrases; keep them grounded, mysterious, and highly clickable. 
+
+My Video Topic: [Insert your video topic here]</pre>
+                    <button class="copy-btn" onclick="copyPrompt('title1')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Why This Ancient Village Disappeared Without a Trace..."
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The "X vs Y" Extreme Comparison Formula</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Pitches two contrasting elements against each other to drive instant human intrigue and healthy debate in the comments.</p>
+                    <p><strong>Best use case:</strong> Product reviews, tech battles, financial strategies, or fitness challenges.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="title2">Act as an expert YouTube growth specialist. Generate 8 highly competitive 'X vs Y' comparison style titles based on my topic. Use high-contrast power words (e.g., Useless, Secret, Master, Beginner). Ensure the titles create a dramatic showdown feel that forces the viewer to pick a side.
+
+My Video Topic: [Insert your video topic here]</pre>
+                    <button class="copy-btn" onclick="copyPrompt('title2')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Free AI Tools vs $500 Software: The Truth Shocked Me"
+                    </blockquote>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Clipboard Functionality Script -->
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
