@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Startup & Business Strategy - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html" class="active">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Business Category</span>
+                <h2>ChatGPT Prompts for Startup & Strategy</h2>
+                <p class="article-lead">Turn business ideas into actionable reality. These frameworks help you validate business concepts, analyze competitors, uncover unique selling propositions, and map out launch strategies.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Lean Startup Model Planner</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Breaks down any business idea into a structural 1-page business blueprint, analyzing value propositions, customer segments, and revenue streams.</p>
+                    <p><strong>Best use case:</strong> Side hustles, digital agencies, e-commerce brands, or local services.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="biz1">Act as a top-tier startup incubator director. I want to launch a business focused on [Insert Business Idea/Niche]. Help me build a Lean Canvas blueprint for this concept. Break your analysis down into 5 key pillars: 1) Core Problem & Target Audience, 2) Unique Value Proposition (UVP), 3) Top 3 High-Yield Marketing Channels, 4) Primary Revenue Streams, and 5) Key Cost Structures to keep in mind.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('biz1')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "1. Core Problem: Local micro-businesses lack professional visual branding but can't afford expensive agencies. Target Audience: Small business operators, solopreneurs..."
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Competitive Advantage Finder</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Helps you identify gaps in what your local or digital competitors are doing so you can offer something superior.</p>
+                    <p><strong>Best use case:</strong> Positioning your brand, standing out in crowded markets, or setting premium pricing.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="biz2">Act as a market research analyst. I operate a business that provides [Insert Your Service/Product] to [Insert Target Location or Audience]. My main competitors are offering similar things. Generate a list of 7 strategic ideas, hidden gaps, or unique customer service policies I can adopt to stand out instantly and command premium pricing.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('biz2')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "Offer an ultra-fast turnaround package (e.g., '24-Hour Express Delivery') or pair your primary service with a free, high-value bonus that competitors charge extra for..."
+                    </blockquote>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Clipboard Functionality Script -->
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
