@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Social Media Marketing - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html" class="active">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Business Category</span>
+                <h2>ChatGPT Prompts for Social Media Marketing</h2>
+                <p class="article-lead">Stop staring at a blank content calendar. Use these highly tactical prompts to generate viral caption hooks, structure multi-day content plans, and turn random followers into paying clients.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The 7-Day High-Engagement Content Calendar</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Builds a balanced weekly content plan mixing educational value, promotional offers, and highly relatable behind-the-scenes stories.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="social1">Act as an expert social media manager and growth strategist. I run a business providing [Insert Product/Service] for [Insert Target Audience]. Generate a highly engaging 7-day content calendar for Instagram and Facebook. For each day, provide: 1) The Content Pillar (e.g., Value, Authority, Promotion), 2) A visual layout suggestion (e.g., Reel, Carousel, Photo), and 3) A compelling, short caption starter with a clear Call to Action (CTA).</pre>
+                    <button class="copy-btn" onclick="copyPrompt('social1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Scroll-Stopping Caption & Hook Creator</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Crafts attention-grabbing short captions specifically engineered for short-form videos like TikTok or Reels to increase your video retention rates.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="social2">Act as a professional copywriter. I am making a short-form video/post about [Insert Specific Topic/Tip]. Generate 5 scroll-stopping opening hooks under 10 words, followed by an engaging, conversational caption layout that uses bullet points for easy reading. Include 5 highly relevant, non-spammy hashtags.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('social2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
