@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for YouTube Thumbnails - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html" class="active">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">YouTube Category</span>
+                <h2>ChatGPT Prompts for Thumbnail Ideas</h2>
+                <p class="article-lead">Stop staring at a blank canvas. Use these prompts to get detailed design concepts, color palettes, and emotional compositions that stop viewers from scrolling.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The "Visual Hook" Concept Generator</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Breaks down exactly what should be in the foreground, background, and what text should be used to create an instant emotional response.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="thumb1">Act as a professional YouTube thumbnail designer. I am making a video about [Insert Topic]. Give me 5 distinct thumbnail concepts. For each, describe: 1) The main subject/action, 2) The background setting, 3) The specific text (max 3 words) to overlay, and 4) The color scheme to use to make it pop.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('thumb1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Before vs. After Transformation</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Creates a visual layout for transformation videos that highlights growth, change, or results.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="thumb2">I am creating a transformation video about [Insert Topic]. Create a thumbnail concept that shows the 'Before' and 'After' clearly. Describe the lighting, the facial expressions for both sides, and how to visually separate the two states so the viewer instantly understands the progress.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('thumb2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt copied!');
+            });
+        }
+    </script>
+</body>
+</html>
+
