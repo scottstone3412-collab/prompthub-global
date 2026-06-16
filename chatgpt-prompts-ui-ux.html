@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for UI/UX Layout Concepts - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html" class="active">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Design Category</span>
+                <h2>ChatGPT Prompts for UI/UX Layout Concepts</h2>
+                <p class="article-lead">Design intuitive, high-converting digital spaces. These expert prompts help you plan high-level web architecture, sketch responsive landing page wireframes, and map out seamless user user flows.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Landing Page Wireframe Architect</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Structurally maps out a high-converting landing page layout section-by-section, indicating exactly where text, visual assets, and CTAs should sit for maximum impact.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="ui1">Act as an expert UI/UX designer and conversion rate optimizer (CRO). I need to design a landing page wireframe for a website that offers [Insert Service/Product]. Provide a detailed text-based, section-by-section layout blueprint from top to bottom (Hero section down to the Footer). For each section, outline: 1) The visual layout structural priority, 2) The key copy/heading purpose, and 3) The exact placement and style of the interactive elements or Call-to-Action buttons.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('ui1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The User Flow & Interaction Map</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Traces the exact path a user takes through an app or website, reducing friction and ensuring a smooth, logical interactive experience.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="ui2">Act as a UX research specialist. Map out a step-by-step user interaction flow chart for an application feature where a user wants to [Insert Action, e.g., Register a business account or book a visual design consultation]. List out every action, decision pop-up window, and success screen needed to keep the user experience friction-free, quick, and highly intuitive.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('ui2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
