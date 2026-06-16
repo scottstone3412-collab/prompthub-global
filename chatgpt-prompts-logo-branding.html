@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for Logo & Branding Design - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html" class="active">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Design Category</span>
+                <h2>ChatGPT Prompts for Logo & Branding Design</h2>
+                <p class="article-lead">Define your visual identity. These tactical frameworks help you conceptualize stunning logo ideas, choose psychology-driven color schemes, and structure cohesive brand guidelines.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Brand Identity & Color Palette Architect</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Analyzes a business concept and generates a complete visual branding direction, including a specific 4-color palette, font combinations, and brand mood descriptors.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="brand1">Act as an expert brand strategist. I am developing a brand identity for a business called "[Insert Brand Name]" that offers [Insert Product/Service] to [Insert Target Audience]. Generate a cohesive brand style guide strategy. Provide: 1) Three core brand personality adjectives, 2) A custom 4-color palette with hex codes and the psychological reason for each color choice, and 3) Recommendations for a premium typography pairing (Heading font and Body font) that matches this identity.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('brand1')">Copy Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: The Logo Concept Brainstorming Framework</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Breaks down abstract business ideals into concrete visual metaphors and shapes, providing detailed layout concepts you can draw yourself, build in CorelDRAW, or paste into an image generator.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="brand2">Act as a professional graphic designer. Brainstorm 5 unique, creative logo concepts for a brand named "[Insert Brand Name]" in the [Insert Industry/Niche] sector. For each concept, describe: 1) The visual symbols and geometry to combine, 2) The style execution (e.g., minimalist emblem, bold wordmark, abstract geometric), and 3) The conceptual meaning behind the design elements.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('brand2')">Copy Prompt</button>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            });
+        }
+    </script>
+
+</body>
+</html>
+
