@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Prompts for AI Art & Midjourney - PromptHub Global</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo-area">
+            <h1>PromptHub Global</h1>
+            <p>Your Free AI Prompt Library</p>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
+            <a href="business-prompts.html">Business Prompts</a>
+            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="design-prompts.html" class="active">Design Prompts</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        
+        <article class="prompt-article">
+            <header class="article-title-section">
+                <span class="category-tag">Design Category</span>
+                <h2>ChatGPT Prompts for AI Art & Midjourney</h2>
+                <p class="article-lead">Unlock advanced image generation. These optimized prompt generators help you craft detailed descriptive formulas for Midjourney, DALL-E 3, and Stable Diffusion, focusing on complex camera angles, cinematic lighting, and custom parameters.</p>
+            </header>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 1 -->
+            <section class="prompt-section">
+                <h3>Prompt 1: The Cinematic Photorealism Master Blueprint</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Instructs ChatGPT to generate hyper-detailed, multi-layered visual prompt text designed specifically to get ultra-realistic human faces, clothing details, and studio environments in Midjourney.</p>
+                    <p><strong>Best use case:</strong> Creating high-resolution portraits, lifestyle blog imagery, or thumbnail character assets.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="art1">Act as an expert AI prompt engineer for image generators like Midjourney. I will give you a core subject. You will output a detailed, descriptive art prompt including: 1) Concrete clothing textures and materials, 2) Specific camera lenses and lighting setups (e.g., volumetric lighting, golden hour, 85mm lens, f/1.8), 3) Background setting context, and 4) Core styling terms for extreme realism. Avoid abstract buzzwords; focus entirely on technical camera and lighting descriptions.
+
+My Core Subject: [Insert your subject here]</pre>
+                    <button class="copy-btn" onclick="copyPrompt('art1')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "A close-up studio portrait of [Subject], wearing a heavy wool knit sweater, rembrandt lighting with deep shadows, shot on a Canon EOS R5, 85mm lens, f/1.4, cinematic mood, hyper-detailed skin textures..."
+                    </blockquote>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- PROMPT 2 -->
+            <section class="prompt-section">
+                <h3>Prompt 2: Cartoon, Vector, & Flat Illustration Generator</h3>
+                <div class="meta-info">
+                    <p><strong>What it does:</strong> Standardizes text layouts to help you generate clean, isolated vector assets, modern app graphics, or character sheets with smooth solid backgrounds.</p>
+                    <p><strong>Best use case:</strong> Icon packs, website hero illustrations, sticker designs, or logo concept bases.</p>
+                </div>
+                
+                <div class="prompt-box-container">
+                    <pre id="art2">Act as a professional graphic illustrator. Generate a detailed image prompt for a flat, modern vector illustration representing [Insert Object/Concept]. Specify vibrant, harmonious color schemes, clean outlines, minimalism, and a solid plain white background. Explicitly state that no complex gradients, shadows, or text rendering should be included.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('art2')">Copy Prompt</button>
+                </div>
+
+                <div class="example-output">
+                    <h4>Example Output Snapshot</h4>
+                    <blockquote>
+                        "A minimalist flat vector illustration of a vintage camera, clean sharp lines, pastel color palette, isolated on a solid white background, 2D graphic design style..."
+                    </blockquote>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Footer Area -->
+    <footer class="main-footer">
+        <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
+        <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <!-- Clipboard Functionality Script -->
+    <script>
+        function copyPrompt(id) {
+            const promptText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(promptText).then(() => {
+                alert('Prompt successfully copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
+
