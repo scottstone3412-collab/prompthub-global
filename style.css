@@ -1,8 +1,21 @@
-/* ==========================================
-   PromptHub Global - Animated Core Stylesheet
-   ========================================== */
+/* ==========================================================================
+   PROMPTHUB GLOBAL - PREMIUM UI/UX CORE STYLESHEET (2026 EDITION)
+   ========================================================================== */
 
-/* Base Reset & Variables */
+/* 1. Global Reset & Variables */
+:root {
+    --bg-dark: #0f172a;           /* Deep slate space background */
+    --card-bg: #1e293b;           /* Lighter slate for depth cards */
+    --card-border: #334155;       /* Subtle metallic borders */
+    --text-main: #f8fafc;         /* Crisp white body text */
+    --text-muted: #94a3b8;        /* Soft silver gray for summaries */
+    --primary-glow: #a855f7;     /* Neon purple */
+    --secondary-glow: #3b82f6;   /* Electric blue */
+    --accent-glow: #10b981;      /* Emerald green for success/tags */
+    --glass-glow: rgba(168, 85, 247, 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,101 +24,365 @@
 }
 
 body {
-    background-color: #0b0f19;
-    color: #e2e8f0;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* Header & Navigation */
+/* 2. Header & Navigation (UI Architecture) */
 .main-header {
-    background-color: #0f172a;
-    border-bottom: 1px solid #1e293b;
-    padding: 20px 5%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--card-border);
+    padding: 1.2rem 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .main-header {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-area h1 {
     font-size: 1.8rem;
-    color: #ffffff;
     font-weight: 800;
     letter-spacing: -0.5px;
+    background: linear-gradient(135deg, var(--text-main), var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .logo-area p {
-    font-size: 0.9rem;
-    color: #94a3b8;
+    font-size: 0.85rem;
+    color: var(--accent-glow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.2rem;
 }
 
 .nav-links {
-    margin-top: 15px;
-}
-
-@media (min-width: 768px) {
-    .nav-links {
-        margin-top: 0;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
 }
 
 .nav-links a {
-    color: #94a3b8;
+    color: var(--text-muted);
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: var(--transition-smooth);
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: #38bdf8;
+    color: var(--text-main);
+    background-color: var(--card-bg);
+    border-color: var(--card-border);
 }
 
-/* Hero Section with Moving Ambient Glow */
+.nav-links a.active {
+    border-color: var(--primary-glow);
+    box-shadow: 0 0 10px var(--glass-glow);
+}
+
+/* 3. Hero Layout Typography */
 .hero-section {
-    padding: 60px 20px;
+    padding: 4rem 5% 3rem 5%;
     text-align: center;
-    background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
-    position: relative;
-}
-
-.hero-section h2 {
-    font-size: 2.2rem;
-    color: #ffffff;
     max-width: 800px;
-    margin: 0 auto 15px auto;
-    font-weight: 800;
-}
-
-.hero-section p {
-    font-size: 1.1rem;
-    color: #94a3b8;
-    max-width: 600px;
     margin: 0 auto;
 }
 
-/* Text Gradient Effect */
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
 .text-gradient {
-    background: linear-gradient(to right, #38bdf8, #818cf8);
+    background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Categories Layout */
+.hero-section p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* 4. Grid Sub-Category Interaction Layout */
 .categories-container {
+    padding: 1rem 5% 4rem 5%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: #475569;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Visual cue highlight for live content paths */
+.writing-glow {
+    border-color: rgba(168, 85, 247, 0.4);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.05);
+}
+
+.writing-glow:hover {
+    border-color: var(--primary-glow);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.2);
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.category-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.card-link-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    transition: var(--transition-smooth);
+}
+
+/* Conditional UI Button States */
+.category-card .card-link-btn[href="#"] {
+    background-color: #1e293b;
+    color: #475569;
+    border: 1px dashed var(--card-border);
+    cursor: not-allowed;
+}
+
+.category-card:not(.writing-glow) .card-link-btn:not([href="#"]) {
+    background-color: #334155;
+    color: var(--text-main);
+}
+
+.category-card .card-link-btn:not([href="#"]):hover {
+    background: linear-gradient(135deg, var(--primary-glow), var(--secondary-glow));
+    color: #ffffff;
+    box-shadow: 0 4px 15px var(--glass-glow);
+}
+
+/* 5. Deep-Dive Prompt Display UX & Clipboard Interaction */
+.content-container {
+    padding: 2rem 5% 5rem 5%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.prompt-article {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--secondary-glow);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.article-title-section h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.8rem;
+}
+
+.article-lead {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--card-border), transparent);
+    margin: 2.5rem 0;
+}
+
+.prompt-section h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.meta-info {
+    background-color: rgba(15, 23, 42, 0.4);
+    border-left: 3px solid var(--secondary-glow);
+    padding: 1rem;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.meta-info p {
+    margin-bottom: 0.4rem;
+}
+
+.meta-info p:last-child {
+    margin-bottom: 0;
+}
+
+.meta-info strong {
+    color: var(--text-main);
+}
+
+/* Prompt Box Typography & UX Safe Scaffolding */
+.prompt-box-container {
+    position: relative;
+    background-color: #0b0f19;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.prompt-box-container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+
+.copy-btn {
+    display: block;
+    margin-top: 1.2rem;
+    background-color: #334155;
+    color: var(--text-main);
+    border: 1px solid var(--card-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    transition: var(--transition-smooth);
+}
+
+.copy-btn:hover {
+    background-color: var(--accent-glow);
+    border-color: var(--accent-glow);
+    color: #0f172a;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.example-output h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.example-output blockquote {
+    font-style: italic;
+    color: var(--text-muted);
+    border-left: 2px dashed #475569;
+    padding-left: 1rem;
+}
+
+/* 6. Footer System Layout */
+.main-footer {
+    border-top: 1px solid var(--card-border);
+    background-color: #0b111e;
+    padding: 3rem 5%;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.main-footer p {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: var(--transition-smooth);
+}
+
+.footer-links a:hover {
+    color: var(--primary-glow);
+}
+
+/* 7. Media Queries for Seamless Desktop Formats */
+@media (min-width: 768px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo-area h1, .logo-area p {
+        text-align: left;
+    }
+    
+    .hero-section h2 {
+        font-size: 3.5rem;
+    }
+    
+    .prompt-article {
+        padding: 3.5rem;
+    }
 }
 
 .categories-grid {
