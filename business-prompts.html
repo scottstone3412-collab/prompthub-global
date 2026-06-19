@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business & Marketing Master Prompts | PromptHub Global</title>
-    <meta name="description" content="Scale your enterprise with our business master prompt repository. Optimize social calendars, business plans, and high-converting copy frameworks.">
-    <meta name="keywords" content="business master prompt, marketing chatgpt prompts, email copywriting prompts, startup planning templates">
+    <meta name="description" content="Scale your enterprise with our business master prompt repository. Optimize social media calendars, startup business plans, and high-converting email copywriting frameworks automatically.">
+    <meta name="keywords" content="business master prompt, marketing chatgpt prompts, email copywriting prompts, startup planning templates, prompt engineering for business">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Main Header Area -->
     <header class="main-header">
         <div class="logo-area">
             <h1>PromptHub Global</h1>
@@ -24,38 +25,92 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <h2>Business & <span class="text-gradient">Marketing Master Prompts</span></h2>
-        <p>Automate your business operational strategies. Discover high-performing master prompt resources for competitive intelligence, marketing templates, and sales copywriting.</p>
-    </section>
+    <!-- Deep-Dive Content Container -->
+    <div class="content-container">
+        <article class="prompt-article">
+            
+            <span class="category-tag">Business Department</span>
+            <h2>Enterprise & Marketing Operations Blueprint</h2>
+            <p class="article-lead">Stop wasting capital on vague marketing advice. Use these engineered master prompt configurations to execute lean business models, construct fully fleshed-out marketing campaigns, and draft high-converting copy instantly.</p>
+            
+            <hr class="section-divider">
 
-    <main class="categories-container">
-        <div class="categories-grid">
-            <div class="category-card writing-glow">
-                <div class="card-icon">🚀</div>
-                <h3>Startup & Strategy</h3>
-                <p>Run full market research analysis and canvas blueprints using an advanced strategic master prompt configuration.</p>
-                <a href="chatgpt-prompts-business-strategy.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">📱</div>
-                <h3>Social Media Marketing</h3>
-                <p>Build comprehensive 7-day high-engagement content schedules and social growth designs seamlessly.</p>
-                <a href="chatgpt-prompts-social-media.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">✉️</div>
-                <h3>Email Copywriting</h3>
-                <p>Draft high-converting newsletters and direct-response promotional sequences optimized for click-through rate rules.</p>
-                <a href="chatgpt-prompts-email-copywriting.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-        </div>
-    </main>
+            <!-- Deep SEO Context Section 1 -->
+            <section class="prompt-section">
+                <h3>1. Lean Startup Strategy & Market Analysis</h3>
+                <p>Launching a venture or a new brand requires deep structural clarity. This framework guides generative AI models to think like elite business consultants, breaking down your brand concepts into comprehensive audience avatars, pain point sheets, and unique selling propositions.</p>
+                
+                <div class="meta-info">
+                    <p><strong>Target AI Model:</strong> ChatGPT (GPT-4), Claude Opus, or Google Gemini Pro</p>
+                    <p><strong>Variables to Change:</strong> Swap out the text within the brackets <code>[...]</code> before processing.</p>
+                </div>
 
+                <!-- Prompt Box 1 Container -->
+                <div class="prompt-box-container">
+                    <pre id="business-strategy-prompt">Act as a world-class venture builder and strategic marketing consultant. I want you to construct a comprehensive business and market entry blueprint for a business concept specializing in: "[INSERT REVENUE CONCEPT OR BUSINESS IDEA HERE]".
+
+Provide your comprehensive analysis covering these 4 exact operational areas:
+1. CUSTOMER AVATAR DEEP DIVE: Identify the primary target demographic, their core psychological frustrations, and hidden buying triggers.
+2. COMPETITIVE EDGE MAP: Detail a unique value proposition (UVP) that makes this venture stand out against existing alternatives.
+3. 30-DAY OPERATIONAL ROADMAP: Provide a week-by-week checklist of core priorities to launch cleanly.
+4. MONETIZATION TIERS: Outline 3 scalable pricing models or package structures to optimize average order value (AOV).</pre>
+                    <button class="copy-btn" onclick="copyPrompt('business-strategy-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Deep SEO Context Section 2 -->
+            <section class="prompt-section">
+                <h3>2. High-Engagement 7-Day Content Calendar</h3>
+                <p>Consistency is the lifeblood of online authority. Instead of brainstorming content piece by piece, this marketing matrix maps out a logical, 7-day topical funnel across social channels that smoothly shifts users from standard discovery over to direct conversion actions.</p>
+
+                <!-- Prompt Box 2 Container -->
+                <div class="prompt-box-container">
+                    <pre id="social-calendar-prompt">Act as a master content strategist and growth marketer. Create a highly structured, 7-day social media content matrix for a brand selling "[INSERT YOUR CORE PRODUCT, SERVICE, OR BRAND FOCUS HERE]".
+
+Structure the calendar using this strict marketing funnel cadence:
+- Day 1 & 2 (Authority Building): Share a detailed, value-rich tip or break down a common industry myth.
+- Day 3 & 4 (Social Proof / Story): Highlight a case study, testimonial breakdown, or founder journey lesson.
+- Day 5 (Engagement Loop): Ask an intriguing industry-specific question to spark massive discussions.
+- Day 6 & 7 (Direct Pitch): Run a high-converting, direct sales offer with an explicit urgency hook.
+
+For each day, provide a headline hook, a core caption blueprint, and 3 hyper-targeted niche tags.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('social-calendar-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <!-- Interactive Clipboard Engine Script -->
+    <script>
+        function copyPrompt(elementId, button) {
+            var textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                var originalText = button.innerText;
+                button.innerText = "✓ Prompt Copied!";
+                button.style.backgroundColor = "#10b981";
+                button.style.color = "#0f172a";
+                setTimeout(function() {
+                    button.innerText = originalText;
+                    button.style.backgroundColor = "#334155";
+                    button.style.color = "#f8fafc";
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+
+    <!-- Footer System Area -->
     <footer class="main-footer">
         <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
         <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a>
         </div>
     </footer>
 
