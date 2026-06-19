@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master YouTube Prompts & Script Generators | PromptHub Global</title>
-    <meta name="description" content="Access free YouTube master prompts for ChatGPT. Create viral video scripts, high CTR titles, and optimized video tags to beat the algorithm.">
-    <meta name="keywords" content="youtube master prompt, chatgpt youtube scripts, video title generator, viral youtube prompts">
+    <title>Master YouTube Prompts & AI Video Script Generators | PromptHub Global</title>
+    <meta name="description" content="Access free YouTube master prompts for ChatGPT. Create viral video scripts, high CTR title variations, and keyword-optimized description tagging matrices automatically.">
+    <meta name="keywords" content="youtube master prompt, chatgpt youtube scripts, video title generator, viral youtube prompts, prompt engineering for creators">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Main Header Area -->
     <header class="main-header">
         <div class="logo-area">
             <h1>PromptHub Global</h1>
@@ -24,38 +25,93 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <h2>YouTube & <span class="text-gradient">Video Master Prompts</span></h2>
-        <p>Unlock the algorithm. Use a tailored master prompt to structure high-retention video outlines, generate viral titles, and automate video production workflows.</p>
-    </section>
+    <!-- Deep-Dive Content Container -->
+    <div class="content-container">
+        <article class="prompt-article">
+            
+            <span class="category-tag">YouTube Department</span>
+            <h2>The Algorithm Master Prompt Blueprint</h2>
+            <p class="article-lead">Stop struggling with content ideation and retention drop-offs. Below you will find highly optimized engineering frameworks built to format fully retention-engineered video elements automatically using generative AI engines.</p>
+            
+            <hr class="section-divider">
 
-    <main class="categories-container">
-        <div class="categories-grid">
-            <div class="category-card writing-glow">
-                <div class="card-icon">📝</div>
-                <h3>Video Script Creation</h3>
-                <p>Deploy a scriptwriting master prompt to generate fully formed, engaging video outlines and hooks.</p>
-                <a href="chatgpt-prompts-youtube-scripts.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">💥</div>
-                <h3>Viral Titles & Hooks</h3>
-                <p>Generate dozens of hyper-compelling, psychology-backed video titles to scale your CTR.</p>
-                <a href="chatgpt-prompts-youtube-titles.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">🔍</div>
-                <h3>SEO & Descriptions</h3>
-                <p>Optimize your video metadata using tags, chapters, and keyword-rich descriptions for organic search traffic.</p>
-                <a href="chatgpt-prompts-youtube-seo.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-        </div>
-    </main>
+            <!-- Deep SEO Context Section 1 -->
+            <section class="prompt-section">
+                <h3>1. High-Retention Video Script Master Prompt</h3>
+                <p>To successfully rank videos or capture audience interest within the first 3 seconds, a script requires a precise psychological framework. This framework forces the AI engine to generate structural hooks, runtime beats, and natural transitions instead of standard essays.</p>
+                
+                <div class="meta-info">
+                    <p><strong>Target AI Model:</strong> ChatGPT, Claude, or Rumble Video Assistant</p>
+                    <p><strong>Variables to Change:</strong> Replace the placeholder text inside the bracket symbols <code>[...]</code> before sending.</p>
+                </div>
 
+                <!-- Prompt Box 1 Container -->
+                <div class="prompt-box-container">
+                    <pre id="script-prompt">Act as a professional YouTube scriptwriter specializing in psychology-backed, high-retention storytelling. Your goal is to write a comprehensive video script outline about [INSERT YOUR VIDEO TOPIC HERE]. 
+
+Apply the following strict layout mechanics:
+1. THE HOOK (First 30 Seconds): State a compelling problem or shocking stat immediately. Do not say "Welcome back to my channel".
+2. THE PUSH: Create an open loop explaining exactly what the viewer will lose if they turn off the video before the end.
+3. BODY BEATS: Break the core explanation down into 3 distinct, high-value sub-points with smooth visual queue pacing notes.
+4. CALL TO ACTION: Pivot smoothly into a viewer engagement prompt without using generic outro phrases.
+
+Tone profile: Clear, engaging, authoritative, and direct.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('script-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Deep SEO Context Section 2 -->
+            <section class="prompt-section">
+                <h3>2. Viral Title & Click-Through Rate (CTR) Matrix</h3>
+                <p>Your video title dictates whether users click or scroll past your content. This structural title matrix utilizes analytical curiosity loops and specific human urgency elements to generate high CTR variations without resorting to low-tier clickbait.</p>
+
+                <!-- Prompt Box 2 Container -->
+                <div class="prompt-box-container">
+                    <pre id="title-prompt">Act as an expert digital copywriter and YouTube growth strategist. Analyze the following video topic idea: "[INSERT YOUR CORE VIDEO TOPIC OR RAW TITLE HERE]". 
+
+Generate 10 unique, high-CTR alternative titles based on these exact psychological frameworks:
+- Framework A (Curiosity Loop): Make the viewer ask a hidden question.
+- Framework B (Negativity Bias): Highlight a critical mistake being made.
+- Framework C (The Shortcut): Focus on speed, ease, or structural optimization.
+
+Keep all variations under 60 characters to avoid truncation on mobile screens.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('title-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <!-- Interactive Clipboard Engine Script -->
+    <script>
+        function copyPrompt(elementId, button) {
+            var textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                var originalText = button.innerText;
+                button.innerText = "✓ Prompt Copied!";
+                button.style.backgroundColor = "#10b981";
+                button.style.color = "#0f172a";
+                setTimeout(function() {
+                    button.innerText = originalText;
+                    button.style.backgroundColor = "#334155";
+                    button.style.color = "#f8fafc";
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+
+    <!-- Footer System Area -->
     <footer class="main-footer">
         <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
         <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a>
         </div>
     </footer>
 
