@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Master YouTube Prompts & Script Generators | PromptHub Global</title>
-    <meta name="description" content="Access free YouTube master prompts for ChatGPT. Create viral video scripts, high CTR titles, and optimized video tags to beat the algorithm.">
-    <meta name="keywords" content="youtube master prompt, chatgpt youtube scripts, video title generator, viral youtube prompts">
+    <title>Creative Writing Master Prompts for Authors | PromptHub Global</title>
+    <meta name="description" content="Eliminate writer's block with creative master prompts for ChatGPT. Generate complex story structures, deep character arcs, and rich moral folktales seamlessly.">
+    <meta name="keywords" content="creative writing master prompt, chatgpt story generator, book outline prompts, storytelling templates, prompt engineering for authors">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Main Header Area -->
     <header class="main-header">
         <div class="logo-area">
             <h1>PromptHub Global</h1>
@@ -17,45 +18,101 @@
         </div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="youtube-prompts.html" class="active">YouTube Prompts</a>
+            <a href="youtube-prompts.html">YouTube Prompts</a>
             <a href="business-prompts.html">Business Prompts</a>
-            <a href="writing-prompts.html">Writing Prompts</a>
+            <a href="writing-prompts.html" class="active">Writing Prompts</a>
             <a href="design-prompts.html">Design Prompts</a>
         </nav>
     </header>
 
-    <section class="hero-section">
-        <h2>YouTube & <span class="text-gradient">Video Master Prompts</span></h2>
-        <p>Unlock the algorithm. Use a tailored master prompt to structure high-retention video outlines, generate viral titles, and automate video production workflows.</p>
-    </section>
+    <!-- Deep-Dive Content Container -->
+    <div class="content-container">
+        <article class="prompt-article">
+            
+            <span class="category-tag">Writing Department</span>
+            <h2>Narrative & Storytelling Master Frameworks</h2>
+            <p class="article-lead">Bypass writer's block entirely. These precise storytelling prompt structures inject emotional resonance, cultural depth, and robust thematic arcs directly into generative AI engines.</p>
+            
+            <hr class="section-divider">
 
-    <main class="categories-container">
-        <div class="categories-grid">
-            <div class="category-card writing-glow">
-                <div class="card-icon">📝</div>
-                <h3>Video Script Creation</h3>
-                <p>Deploy a scriptwriting master prompt to generate fully formed, engaging video outlines and hooks.</p>
-                <a href="chatgpt-prompts-youtube-scripts.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">💥</div>
-                <h3>Viral Titles & Hooks</h3>
-                <p>Generate dozens of hyper-compelling, psychology-backed video titles to scale your CTR.</p>
-                <a href="chatgpt-prompts-youtube-titles.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-            <div class="category-card writing-glow">
-                <div class="card-icon">🔍</div>
-                <h3>SEO & Descriptions</h3>
-                <p>Optimize your video metadata using tags, chapters, and keyword-rich descriptions for organic search traffic.</p>
-                <a href="chatgpt-prompts-youtube-seo.html" class="card-link-btn">Explore Prompts</a>
-            </div>
-        </div>
-    </main>
+            <!-- Deep SEO Context Section 1 -->
+            <section class="prompt-section">
+                <h3>1. Cultural Folktale & Moral Story Blueprint</h3>
+                <p>Folktales rely on specific pacing mechanics: an innocent protagonist, an unexpected trial, ancestral wisdom, and a universal moral lesson. This master prompt structures AI to spin rich, engaging cultural narratives rather than predictable clichés.</p>
+                
+                <div class="meta-info">
+                    <p><strong>Target AI Model:</strong> ChatGPT, Claude, or any advanced LLM writing assistant.</p>
+                    <p><strong>Variables to Change:</strong> Replace the text inside the bracket symbols <code>[...]</code> before hitting run.</p>
+                </div>
 
+                <!-- Prompt Box 1 Container -->
+                <div class="prompt-box-container">
+                    <pre id="folktale-prompt">Act as a master traditional storyteller and cultural author. I want you to write an engaging, moral-driven folktale centered around: "[INSERT YOUR CORE STORY IDEA, MORAL LESSON, OR SETTING HERE]".
+
+Incorporate the following narrative mechanics:
+1. THE SETTING: Open with vivid imagery describing the village, landscape, and environment.
+2. THE CONFLICT: Introduce a central dilemma or an act of trickery that disrupts the community.
+3. THE ELDER'S WISDOM: Introduce a character representing ancestral guidance or an internal realization.
+4. THE RESOLUTION: Conclude with a strong, definitive proverb or moral lesson that ties directly to the plot.
+
+Tone profile: Rich, rhythmic, descriptive, and wise.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('folktale-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- Deep SEO Context Section 2 -->
+            <section class="prompt-section">
+                <h3>2. Comprehensive Chapter & Character Arc Architect</h3>
+                <p>Writing long-form prose requires strict pacing so readers stay hooked. This engineering model forces the AI to construct an overarching structural summary, complex human internal dilemmas, and high-stakes turning points for any book chapter.</p>
+
+                <!-- Prompt Box 2 Container -->
+                <div class="prompt-box-container">
+                    <pre id="chapter-prompt">Act as an elite fiction editor and creative book writing coach. I am writing a chapter focused on: "[INSERT GENERAL CHAPTER PLOT OR SCENE FOCUS HERE]".
+
+Generate a comprehensive chapter blueprint that breaks down:
+- SCENE OBJECTIVE: What is the primary physical goal the protagonist must achieve?
+- INTERNAL CONFLICT: What hidden emotional doubt or choice is tearing at the characters?
+- THE PIVOT: Create a sudden dialogue twist or discovery that changes the direction of the plot.
+- THE CLIFFHANGER: End with an unresolved tension line that forces the reader to flip to the next page.
+
+Provide a dialogue example illustrating the tension between the main characters.</pre>
+                    <button class="copy-btn" onclick="copyPrompt('chapter-prompt', this)">Copy Master Prompt</button>
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <!-- Interactive Clipboard Engine Script -->
+    <script>
+        function copyPrompt(elementId, button) {
+            var textToCopy = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(textToCopy).then(function() {
+                var originalText = button.innerText;
+                button.innerText = "✓ Prompt Copied!";
+                button.style.backgroundColor = "#10b981";
+                button.style.color = "#0f172a";
+                setTimeout(function() {
+                    button.innerText = originalText;
+                    button.style.backgroundColor = "#334155";
+                    button.style.color = "#f8fafc";
+                }, 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+
+    <!-- Footer System Area -->
     <footer class="main-footer">
         <p>&copy; 2026 PromptHub Global. All rights reserved.</p>
         <div class="footer-links">
-            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact</a>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a>
         </div>
     </footer>
 
